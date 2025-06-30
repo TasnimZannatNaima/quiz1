@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ui.QuizController"
+            prefHeight="400.0" prefWidth="600.0" >
+    <children>
+        <Label fx:id="questionLabel" layoutX="20" layoutY="20" prefWidth="560" wrapText="true"/>
+        <Label fx:id="timerLabel" layoutX="500" layoutY="60"/>
+        <VBox layoutX="20" layoutY="80" spacing="10">
+            <RadioButton fx:id="optA" toggleGroup="$options" id="optA"/>
+            <RadioButton fx:id="optB" toggleGroup="$options" id="optB"/>
+            <RadioButton fx:id="optC" toggleGroup="$options" id="optC"/>
+            <RadioButton fx:id="optD" toggleGroup="$options" id="optD"/>
+        </VBox>
+        <Button fx:id="nextBtn" layoutX="20" layoutY="300" text="Next"/>
+        <Button fx:id="restartBtn" layoutX="100" layoutY="300" text="Restart"/>
+        <Button fx:id="exitBtn" layoutX="200" layoutY="300" text="Exit"/>
+    </children>
+
+</AnchorPane>
